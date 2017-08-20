@@ -4,20 +4,21 @@ username =
 # hostname. set it to a FQDN in order to be reached from outside
 host = localhost
 # ports
-electrum_rpc_port = 8000
-stratum_tcp_port = 50001
-#stratum_tcp_ssl_port = 50002
+electrum_rpc_port = 8005
+stratum_tcp_port = 50006
+#stratum_tcp_ssl_port = 50007
 #report_host =
-#report_stratum_tcp_port = 50001
-#report_stratum_tcp_ssl_port = 50002
-banner = Welcome to Electrum!
-banner_file = /etc/electrum.banner
+#report_stratum_tcp_port = 50006
+#report_stratum_tcp_ssl_port = 50007
+banner = Welcome to Tesla Coin Electrum!
+banner_file = /etc/electrum_tesla.banner
 #irc = no
+#irc_channel = <irc channelname> # not implemented atm
 #irc_nick = <yournickname>
 #irc_bind_ip = <external ip address>
 #ssl_certfile = /path/to/electrum-server.crt
 #ssl_keyfile = /path/to/electrum-server.key
-logfile = /var/log/electrum.log
+logfile = /var/log/electrum-tesla.log
 donation_address =
 
 [leveldb]
@@ -34,7 +35,7 @@ pruning_limit = 100
 
 [bitcoind]
 bitcoind_host = localhost
-bitcoind_port = 8332
-# user and password from bitcoin.conf (not needed for localhost)
+bitcoind_port = 7685
+# user and password from teslacoin.conf (not needed for localhost)
 #bitcoind_user =
 #bitcoind_password =

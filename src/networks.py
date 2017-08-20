@@ -2,10 +2,11 @@
 
 params = {
     'bitcoin_main': {
-        'pubkey_address': 0,
-        'script_address': 5,
-        'genesis_hash': '000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f'
+        'pubkey_address': 11,
+        'script_address': 8,
+        'genesis_hash': '000003bc73d4b7f3fd328c3c114348ad61eab941c3ef9d49b81b7dc0c95ffb8b'
     },
+	#testnet is not working
     'bitcoin_test': {
         'pubkey_address': 111,
         'script_address': 196,

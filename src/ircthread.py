@@ -45,6 +45,7 @@ class IrcThread(threading.Thread):
         self.stratum_tcp_ssl_port = options.get('stratum_tcp_ssl_port')
         self.report_stratum_tcp_port = options.get('report_stratum_tcp_port')
         self.report_stratum_tcp_ssl_port = options.get('report_stratum_tcp_ssl_port')
+		self.irc_channel = options.get('irc_channel')
         self.irc_bind_ip = options.get('irc_bind_ip')
         self.host = options.get('host')
         self.report_host = options.get('report_host')
@@ -69,7 +70,7 @@ class IrcThread(threading.Thread):
             s += 'p' + self.pruning_limit + ' '
 
         def add_port(letter, number):
-            DEFAULT_PORTS = {'t':'50001', 's':'50002'}
+            DEFAULT_PORTS = {'t':'50006', 's':'50007'}
             if not number: return ''
             if DEFAULT_PORTS[letter] == number:
                 return letter + ' '
@@ -85,7 +86,7 @@ class IrcThread(threading.Thread):
         threading.Thread.start(self)
 
     def on_connect(self, connection, event):
-        connection.join("#electrum")
+        connection.join("##electrum-tes")
 
     def on_join(self, connection, event):
         m = re.match("(E_.*)!", event.source)
