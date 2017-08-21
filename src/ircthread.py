@@ -45,7 +45,7 @@ class IrcThread(threading.Thread):
         self.stratum_tcp_ssl_port = options.get('stratum_tcp_ssl_port')
         self.report_stratum_tcp_port = options.get('report_stratum_tcp_port')
         self.report_stratum_tcp_ssl_port = options.get('report_stratum_tcp_ssl_port')
-		self.irc_channel = options.get('irc_channel')
+	#self.irc_channel = options.get('irc_channel')
         self.irc_bind_ip = options.get('irc_bind_ip')
         self.host = options.get('host')
         self.report_host = options.get('report_host')
