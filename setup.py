@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="electrum-tesla-server",
     version="1.0",
-    scripts=['run_electrum_server.py','electrum-server'],
+    scripts=['run_electrum_server.py','electrum-tesla-server'],
     install_requires=['plyvel','jsonrpclib', 'irc >= 11, <=14.0'],
     package_dir={
         'electrumserver':'src'
